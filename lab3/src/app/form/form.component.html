@@ -1,0 +1,24 @@
+<div>
+  <p>Register</p>
+  <input
+    type="text"
+    placeholder="name"
+    [(ngModel)]="name"
+    [ngClass]="{
+      valid: name && name.length >= 3,
+      invalid: name && name.length < 3
+    }"
+  />
+  <span *ngIf="name.length < 3 && name">Name is invalid</span>
+  <input
+    type="text"
+    placeholder="age"
+    [(ngModel)]="age"
+    [ngClass]="{
+      valid: age && +age > 20 && +age < 40,
+      invalid: (age && +age <= 20) || +age >= 40
+    }"
+  />
+  <span *ngIf="(+age < 20 || +age > 40) && age">Age is invalid</span>
+  <button (click)="add()">ADD</button>
+</div>

@@ -1,0 +1,38 @@
+div{
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: aliceblue;
+  padding: 40px 20px;
+  border: 2px solid black;
+  align-items: center;
+  border-radius: 20px;
+}
+button{
+  width: 50px;
+  background-color: rgb(16,142,221);
+  border: 2px solid black;
+  border-radius: 25px;
+}
+button:hover{
+  cursor: pointer;
+}
+p{
+  margin: 0px;
+  font-size: x-large;
+  border-bottom: 2px solid darkslategray;
+  color: rgb(10, 81, 126);
+}
+input{
+  height: 20px;
+  border: 1px solid darkslategray;
+  border-radius: 20px;
+  padding: 4px;
+}
+.valid{
+  border: 2px solid greenyellow;
+}
+.invalid{
+  border: 2px solid red;
+}

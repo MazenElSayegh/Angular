@@ -1,0 +1,11 @@
+div{
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  font-family:monospace;
+  font-size: x-large;
+}

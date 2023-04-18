@@ -1,0 +1,36 @@
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section {
+  margin: 20px;
+}
+p {
+  font-size: x-large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: darkslategray;
+  font-weight: 700;
+}
+
+img {
+  width: 600px;
+  height: 300px;
+  border-radius: 50px;
+  opacity: 0.8;
+}
+button {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid darkslategray;
+  border-radius: 10px;
+  background-color: lightblue;
+  border-radius: 50%;
+}
+button:hover {
+  cursor: pointer;
+  background-color: darkslategray;
+  border-color: lightblue;
+  color: lightblue;
+}

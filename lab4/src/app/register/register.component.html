@@ -1,0 +1,20 @@
+<form [formGroup]="validate" (ngSubmit)="add()" class="mt-4 alert alert-dark p-5 border border-2 border-dark">
+  <div class="mb-3">
+    <label for="exampleInputname1" class="form-label text-primary fw-bold">Name</label>
+    <input formControlName="name" type="name" class="form-control border-dark" id="exampleInputname1" aria-describedby="nameHelp" placeholder="name">
+  </div>
+  <div *ngIf="!NameValid" class="alert alert-danger p-1 text-center">Name is invalid</div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label text-primary fw-bold">Email address</label>
+    <input formControlName="email" type="email" class="form-control border-dark" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
+    <div id="emailHelp" class="form-text text-dark">We'll never share your email with anyone else.</div>
+  </div>
+  <div *ngIf="!EmailValid" class="alert alert-danger p-1 text-center">Email is invalid</div>
+  <div class="mb-3">
+    <label for="exampleInputAge1" class="form-label text-primary fw-bold">Age</label>
+    <input formControlName="age" type="age" class="form-control border-dark" id="exampleInputAge1" aria-describedby="ageHelp" placeholder="age">
+  </div>
+  <div *ngIf="!AgeValid;" class="alert alert-danger p-1 text-center">Age is invalid</div>
+  <button type="submit" class="btn btn-outline-dark bg-primary fw-bold p-2 rounded-pill">Submit</button>
+  <div *ngIf="FormValid" class="alert alert-success border border-secondary mt-3">Looks good</div>
+</form>

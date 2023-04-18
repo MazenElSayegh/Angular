@@ -1,0 +1,16 @@
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: rgb(57,152,239);
+}
+h3{
+  color: rgb(57,152,239);
+}
+div{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,35 @@
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+input{
+  width: 30%;
+  height: 10px;
+  border: 3px solid darkslategrey;
+  background-color: lightblue;
+  padding: 15px;
+  font-size: larger;
+  border-radius: 25px;
+}
+p{
+  font-size:x-large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: darkslategray;
+  font-weight: 700;
+}
+button{
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px solid darkslategray;
+  border-radius: 10px;
+  background-color: lightblue;
+  border-radius: 50%;
+}
+button:hover{
+  cursor: pointer;
+  background-color: darkslategray;
+  border-color: lightblue;
+  color: lightblue;
+}
