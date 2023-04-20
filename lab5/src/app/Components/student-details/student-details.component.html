@@ -1,0 +1,15 @@
+<div class="d-flex w-100 justify-content-around">
+  <div class="card text-bg-dark mb-3 my-5" *ngIf="user; else falseBlock">
+    <div class="card-header bg-secondary fs-2 px-5 text-dark">{{user.name}}'s Info</div>
+    <div class="card-body fs-4 px-5 text-success fw-bold">
+      <p>ID: {{user.id}}</p>
+      <p>Email: {{user.email}}</p>
+      <p>Age: {{user.age}}</p>
+      <p>Country: {{user.country}}</p>
+      <p>City: {{user.city}}</p>
+      <p>Phone: {{user.phone}}</p></div>
+  </div>
+</div>
+<ng-template #falseBlock>
+  <h1>Loading..</h1>
+</ng-template>

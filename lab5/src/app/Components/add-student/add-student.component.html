@@ -1,0 +1,84 @@
+<div class="container bg-dark text-success fw-bold w-50 p-5 d-flex">
+  <form
+    [formGroup]="validate"
+    (ngSubmit)="
+      Add(
+        name.value,
+        age.value,
+        email.value,
+        country.value,
+        city.value,
+        phone.value
+      )
+    "
+    class="d-flex flex-wrap justify-content-around"
+  >
+    <div class="mb-3">
+      <label for="exampleInputName1" class="form-label">Name</label>
+      <input
+        formControlName="name"
+        #name
+        type="text"
+        class="form-control"
+        id="exampleInputName1"
+        aria-describedby="NameHelp"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input
+        formControlName="email"
+        #email
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+      />
+      <div id="emailHelp" class="form-text">
+        We'll never share your email with anyone else.
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputCountry1" class="form-label">Country</label>
+      <input
+        #country
+        type="text"
+        class="form-control"
+        id="exampleInputCountry1"
+        aria-describedby="CountryHelp"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputAge1" class="form-label">Age</label>
+      <input
+        formControlName="age"
+        #age
+        type="number"
+        class="form-control"
+        id="exampleInputAge1"
+        aria-describedby="AgeHelp"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputCity1" class="form-label">City</label>
+      <input
+        #city
+        type="text"
+        class="form-control"
+        id="exampleInputCity1"
+        aria-describedby="CityHelp"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPhone1" class="form-label">Phone</label>
+      <input
+        #phone
+        type="text"
+        class="form-control"
+        id="exampleInputPhone1"
+        aria-describedby="PhoneHelp"
+      />
+    </div>
+    <button type="submit" class="btn btn-outline-success">Submit</button>
+  </form>
+</div>

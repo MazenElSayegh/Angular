@@ -1,0 +1,21 @@
+<table class="table table-bordered text-center table-dark table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">View</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let u of users">
+      <td>{{u.id}}</td>
+      <td>{{u.name}}</td>
+      <td>{{u.email}}</td>
+      <td><input type="submit" routerLink="/students/{{u.id}}" value="view" class="btn btn-warning"/></td>
+    </tr>
+  </tbody>
+</table>
+<button class="btn btn-outline-success" routerLink="/students/add">
+  Add student
+</button>

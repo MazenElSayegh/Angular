@@ -1,0 +1,31 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Mazen",
+      "age": 25,
+      "email": "mazen@gmail.com",
+      "city": "Alex",
+      "country": "Egypt",
+      "phone": "010123456"
+    },
+    {
+      "id": 2,
+      "name": "Ahmed",
+      "age": 24,
+      "email": "ahmed@gmail.com",
+      "city": "Alex",
+      "country": "Egypt",
+      "phone": "010987673"
+    },
+    {
+      "id": 3,
+      "name": "Mohamed",
+      "age": 26,
+      "email": "moh@gmail.com",
+      "city": "Cairo",
+      "country": "Egypt",
+      "phone": "010123456"
+    }
+  ]
+}
